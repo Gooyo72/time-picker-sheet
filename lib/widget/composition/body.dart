@@ -90,8 +90,8 @@ class _TimePickerBodyState extends State<TimePickerBody> {
 
     final minutes = _getMinutes();
 
-    /// make sure at least there are 3 options on the list.
-    assert(minutes.length >= 3);
+    /// make sure at least there are 2 options on the list.
+    assert(minutes.length >= 2);
     var minuteIndex = minutes.indexOf(widget.dateTime.minute);
     if (minuteIndex == -1) {
       /// IF the minute is less than min value, it will force to select the
